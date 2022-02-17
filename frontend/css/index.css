@@ -25,7 +25,7 @@ header nav ul {
   justify-content: flex-end;
 }
 header nav li {
-  width: 10%;
+  width: 100%;
   display: flex;
   place-content: space-evenly;
 }
@@ -35,6 +35,10 @@ header nav li a {
 }
 header nav li a:hover {
   color: white;
+}
+
+i.fa.fa-solid.fa-list {
+  display: none;
 }
 
 .card {
@@ -49,8 +53,9 @@ header nav li a:hover {
   border-radius: 8px;
   width: 100%;
   align-items: center;
-  height: 54em;
+  max-height: 63em;
   margin-bottom: 5em;
+  min-height: 50em;
 }
 #description img {
   border-radius: 8px;
@@ -145,19 +150,19 @@ h1 {
     margin: -8px;
   }
 
-  header {
-    width: 100%;
-  }
-  header nav {
-    margin: 0;
-  }
-  header nav ul {
-    justify-content: center;
-  }
-  header nav ul li {
-    width: 33%;
-  }
-
+  /*header {
+      width: 100%;
+      position: absolute;
+      nav {
+          margin: 0;
+          ul {
+              justify-content: center;
+              li {
+                  width: 33%;
+              }
+          }
+      }
+      }*/
   #description {
     flex-direction: column;
     margin-top: 4em;
@@ -167,12 +172,71 @@ h1 {
   #description img {
     margin-right: 0;
     width: 70%;
-    padding: 3em;
-    border-radius: 60px;
+    padding-top: 2em;
   }
   #description p {
     font-size: 2em;
     width: 80%;
+  }
+
+  .navbar {
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    justify-content: flex-end;
+  }
+
+  .navbar li {
+    display: block;
+    height: auto;
+    float: left;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar a {
+    padding: 18px 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+  .navbar li:hover,
+a:hover {
+    background-color: #444444;
+  }
+
+  .navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li:hover ul {
+    display: block;
+  }
+
+  .navbar li ul li {
+    background-color: #444444;
+  }
+
+  .navbar li ul li a {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-top: 1px solid #c9d4d8;
+    border-bottom: 1px solid #444444;
+  }
+
+  .navbar li ul li a:hover {
+    background-color: #a3a1a1;
+  }
+
+  i.fa.fa-solid.fa-list {
+    display: initial;
   }
 }
 
