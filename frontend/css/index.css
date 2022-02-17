@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  margin-top: -0.5em;
+  background-color: #262626;
+}
+header nav ul {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+header nav li {
+  width: 10%;
+  display: flex;
+  place-content: space-evenly;
+}
+header nav li a {
+  text-decoration: none;
+  color: #83b440;
+}
+header nav li a:hover {
+  color: white;
+}
+
+.card {
+  padding: 1em;
+  width: 75%;
+}
+
+#description {
+  display: flex;
+  background-color: #2b2d39;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  align-items: center;
+  height: 54em;
+  margin-bottom: 5em;
+}
+#description img {
+  border-radius: 8px;
+  margin-right: 1em;
+  width: 100%;
+}
+#description p {
+  font-size: 2.5em;
+}
+
+#portfolio .projectslist {
+  display: flex;
+  justify-content: space-around;
+}
+#portfolio .projectslist img {
+  border-radius: 8px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 25%;
+  object-fit: inherit;
+}
+#portfolio .projectslist img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  transform: scale(1.5);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+code {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #333;
+  color: white;
+}
+code span {
+  color: #fcc28c;
+}
+code a {
+  color: #83b440;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top i.fa.fa-solid.fa-arrow-up {
+  font-size: 2.1em;
+  color: #83b440;
+}
+
+#scroll_to_top img {
+  width: 25px;
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: -8px;
+  }
+
+  header {
+    width: 100%;
+  }
+  header nav {
+    margin: 0;
+  }
+  header nav ul {
+    justify-content: center;
+  }
+  header nav ul li {
+    width: 33%;
+  }
+
+  #description {
+    flex-direction: column;
+    margin-top: 4em;
+    padding: 0;
+    text-align: center;
+  }
+  #description img {
+    margin-right: 0;
+    width: 70%;
+    padding: 3em;
+    border-radius: 60px;
+  }
+  #description p {
+    font-size: 2em;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
